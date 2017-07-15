@@ -1,7 +1,3 @@
-console.log('main.js');
-
-var name = 55;
-
-function() {
-	console.log(name + 55)
-};
+// $(document).ready(function(){
+// 	$(".hb a").animated("zoomInUp");
+// });

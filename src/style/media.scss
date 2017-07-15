@@ -1,11 +1,671 @@
 @media (min-width: 1436px){
 	.container{
-		width: 1436px;
+		width: 1406px;
+	}
+
+	.wh-box{
+		width: 255px;
+		span{
+			font-size: 16px;
+		}
+	}
+
+
+	.wh-boxs{
+		.border{
+			img{
+				left: 12%;
+			}
+		}
+	}
+
+	#ruble1{
+		right: 220px;
+		top: 140px;
+	}
+
+	#ruble2{
+		left: 0px;
+		bottom: -30px;
+	}
+
+	#ruble3{
+		right: 34px;
+		bottom: -50px;
+	}
+
+	.month{
+		span{
+			margin-left: 98.3px;
+		}
+	}
+
+	.tooltip1{
+		top: -90px;
+		left: 94px;
+	}
+	.tooltip2{
+		top: -13px;
+		left: 187px;
+	}
+
+	.tooltip3{
+		top: -88px;
+		left: 417px;
+	}
+
+	.tooltip4{
+		top: -48px;
+		left: 642px;
+	}
+
+	.tooltip5{
+		top: -88px;
+		left: 841px;
+	}
+
+	.tooltip6{
+		top: -51px;
+		left: 1027px;
 	}
 }
 
-@media (min-width: 1320px){
-	.container{
-		width: 1300px;
+@media (max-width: 1435px){
+	.mb{
+		img{
+			left: 9%;
+		}
+	}
+
+	.wh-box{
+		width: 225px;
+		span{
+			font-size: 15px;
+		}
+	}
+
+	.wh-box{
+		width: 255px;
+		span{
+			font-size: 16px;
+		}
+	}
+
+
+	.wh-boxs{
+		.border{
+			img{
+				left: 12%;
+			}
+		}
+	}
+
+	#ruble1{
+		right: 114px;
+		top: 140px;
+	}
+
+	#ruble2{
+		left: 0px;
+		bottom: -30px;
+	}
+
+	#ruble3{
+		right: 34px;
+		bottom: -50px;
+	}
+
+	.month{
+		span{
+			margin-left: 90.3px;
+		}
+	}
+
+	.tooltip1{
+		top: -90px;
+		left: 94px;
+	}
+	.tooltip2{
+		top: -13px;
+		left: 187px;
+	}
+
+	.tooltip3{
+		top: -88px;
+		left: 417px;
+	}
+
+	.tooltip4{
+		top: -48px;
+		left: 642px;
+	}
+
+	.tooltip5{
+		top: -88px;
+		left: 841px;
+	}
+
+	.tooltip6{
+		top: -51px;
+		left: 1027px;
+	}
+}
+
+
+
+@media (max-width: 1200px){
+	.mb{
+		img{
+			left: 0.7%;
+			top: -100px;
+		}
+	}
+
+	.wh-boxs{
+		.border{
+			img{
+				left: 7%;
+			}
+		}
+	}
+
+	.wh-box{
+		width: 225px;
+		span{
+			font-size: 15px;
+		}
+	}
+
+	#ruble1{
+		right: 30px;
+	}
+
+	#ruble2{
+		left: -110px;
+		bottom: 0px;
+	}
+
+	#ruble3{
+		right: -86px;
+	}
+
+	.tooltip1{
+		top: -90px;
+		left: 0;
+	}
+	.tooltip2{
+		top: -13px;
+		left: 95px;
+	}
+
+	.tooltip3{
+		top: -88px;
+		left: 290px;
+	}
+
+	.tooltip4{
+		top: -48px;
+		left: 472px;
+	}
+
+	.tooltip5{
+		top: -88px;
+		left: 640px;
+	}
+
+	.tooltip6{
+		top: -51px;
+		left: 840px;
+	}
+
+	.month{
+		span{
+			margin-left: 50.3px;
+		}
+	}
+}
+
+@media (max-width: 992px){
+	.mb{
+		position: relative;
+		img{
+			display: none;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			height: 73px;
+			border: 10px dotted #f24841;
+			border-right: 0px;
+			left: 50%;
+			top: 12px;
+			z-index: 50;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			height: 73px;
+			border: 10px dotted #f24841;
+			border-right: 0px;
+			left: 50%;
+			bottom: -120px;
+			z-index: 50;
+		}
+	}
+
+	.wh-box{
+		width: 340px;
+		height: auto;
+		margin-right: 0px;
+		margin:{
+			top: 15px;
+			left: 10px;
+			right: 10px;
+			bottom: 70px;
+		}
+	}
+
+	.media_line{
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			height: 50px;
+			bottom: -70px;
+			border: 10px dotted #e1e1e1;
+		}
+	}
+
+	.forecast{
+		.fn{
+			&:after{
+				border-width: 10px;
+				top: 316px;
+			}
+		}
+		.card{
+			&:after{
+				border-width: 10px;
+				bottom: -208px;
+			}
+
+			&:before{
+				display: none;
+			}
+		}
+	}
+
+	.border{
+		display: none;
+	}
+
+	.ruble{
+		opacity: 0.4;
+	}
+	
+	.our-action{
+		min-height: 594px;
+	}
+
+	.our-offer{
+		.calc{
+			width: 721px;
+		}
+
+		.o-sn{
+			&:before{
+				border-width: 10px;
+			}
+		}
+	}
+
+	.oab-items,
+	.month{
+		display: none;
+	}
+
+}
+
+@media (max-width: 768px){
+	.ruble {
+	    display: none;
+	}
+}
+
+@media (max-width: 760px){
+	.mv{
+		width: 100%;
+	}
+
+	.wh-boxs{
+		width: 100%;
+		text-align: center;
+		.wh-box{
+			height: auto;
+			width: 50%;
+			margin: 100px auto;
+			display: block;
+			&:nth-of-type(3){
+				&:after{
+					content: "";
+					position: absolute;
+					height: 50px;
+					bottom: 339px;
+					border: 10px dotted #e1e1e1;
+				}
+			}
+			&:nth-of-type(4){
+				margin-right: auto;
+				&:after{
+					content: "";
+					position: absolute;
+					height: 50px;
+					bottom: -70px;
+					border: 10px dotted #e1e1e1;
+				}
+			}
+		}
+	}
+	
+	.forecast{
+		min-height: 1020px;
+		.card{
+			width: 93%;
+			padding: 139px 0px 0 182px;
+			background-size: 100%;
+			.amount{
+				font-size: 51px;
+			}
+			.card-button{
+				bottom: -21%;
+				left: -20%;
+			}
+		}
+	}
+	.our-actions{
+		min-height: 604px;
+		padding-top: 163px;
+	}
+
+	.our-offer{
+		.calc{
+			width: 100%;
+			.steps{
+				width: 90%;
+				span{
+					margin-left: 21px;
+				}
+			}
+			.price-line{
+				width: 90%;
+			}
+			.cb{
+				.investmets{
+					span:nth-of-type(1){
+						font-size: 30px;
+					}	
+				}
+				.income{
+					span:nth-of-type(1){
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.ruble{
+		display: none;
+	}
+}
+
+@media (max-width: 660px){
+	.hb{
+		a{
+			&:after{
+				height: 200px;
+			}
+		}
+	}
+}
+
+@media (max-width: 540px){
+	.our-offer{
+		.calc{
+			.steps{
+				span{
+					font-size: 13px;
+				}
+			}
+		}
+	}
+
+	.hb{
+		a{
+			&:after{
+				height: 136px;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px){
+	.forecast{
+		.fn{
+			&:after{
+				top: 402px;
+			}
+		}
+
+		.card{
+			padding: 55px 0 0 82px;
+			&:after{
+				bottom: -128px;
+			}
+			.amount{
+				font-size: 21px;
+			}
+
+			.amount-title{
+				margin-top: 0px;
+				font-size: 14px;
+			}
+
+			.card-date{
+				margin-top: 0px;
+				font-size: 10px;
+			}
+
+			.card-button{
+				bottom: -27%;
+			}
+		}
+	}
+
+	.we-have{
+		padding-top: 143px;
+	}
+	.hb{
+		a{
+			&:after{
+				height: 139px;
+			}
+		}
+	}
+
+	.steps{
+		span{
+			margin-left: 11px;
+		}
+	}
+
+	.our-offer{
+		.calc{
+			&:after{
+				height: 38px;
+			}
+			.cb{
+				.investmets{
+					span:nth-of-type(1){
+						font-size: 18px;
+					}
+					span:nth-of-type(2){
+						font-size: 13px;
+						line-height: 18px;
+					}
+				}
+				.income{
+					span:nth-of-type(1){
+						font-size: 18px;
+					}
+					span:nth-of-type(2){
+						font-size: 13px;
+						line-height: 18px;
+
+					}
+				}
+			}
+		}
+	}
+
+	.wh-boxs{
+		margin: 0 auto;
+		.wh-box{
+			&:nth-of-type(3){
+				&:after{
+					bottom: 366px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 375px){
+	.forecast{
+		.fn{
+			&:after{
+				top: 462px;
+			}
+		}
+		.card{
+			height: 203px;
+			.card-button{
+				bottom: -17%;
+				z-index: 50;
+			}
+		}
+	}
+
+	.our-offer{
+		.calc{
+			&:after{
+				height: 38px;
+			}
+			.steps{
+				span{
+					margin-left: 10px;
+					font-size: 13px;
+				}
+				span:last-child{
+					margin-left: 10px;
+				}
+			}
+			.cb{
+				.investmets{
+					span:nth-of-type(1){
+						font-size: 23px;
+					}
+					span:nth-of-type(2){
+						font-size: 13px;
+					}
+				}
+				.income{
+					span:nth-of-type(1){
+						font-size: 23px;
+					}
+					span:nth-of-type(2){
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 320px){
+	.wh-boxs{
+		.wh-box{
+			a{
+				font-size: 13px;
+			}
+		}
+	}
+	.forecast{
+		.fn{
+			&:after{
+				top: 462px;
+			}
+		}
+		.card{
+			&:after{
+				bottom: -213px;
+			}
+			padding: 35px 0 0 62px;
+			height: 163px;
+			.card-button{
+				bottom: -2%;
+				width: 140px;
+				height: 30px;
+				font-size: 15px;
+				line-height: 30px;
+			}
+		}
+	}
+	.our-offer{
+		.calc{
+			&:after{
+				height: 38px;
+			}
+			.steps{
+				span{
+					margin-left: 10px;
+					font-size: 10px;
+				}
+				span:last-child{
+					margin-left: 10px;
+				}
+			}
+			.cb{
+				.investmets{
+					span:nth-of-type(1){
+						font-size: 18px;
+					}
+					span:nth-of-type(2){
+						font-size: 13px;
+						line-height: 18px;
+					}
+				}
+				.income{
+					span:nth-of-type(1){
+						font-size: 18px;
+					}
+					span:nth-of-type(2){
+						font-size: 13px;
+						line-height: 18px;
+
+					}
+				}
+			}
+		}
+	}
+
+	.our-actions{
+		padding-top: 30px;
+	}
+
+	.footer{
+		.fb{
+			width: 280px;
+		}
 	}
 }

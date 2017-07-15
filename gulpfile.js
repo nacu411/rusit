@@ -3,14 +3,12 @@ var gulp = require('gulp'),
     csso = require('gulp-csso'),
 	watch = require('gulp-watch'), 
 	imagemin = require('gulp-imagemin'), 
-	sourcemaps = require('gulp-sourcemaps'), 
 	autoprefixer = require('gulp-autoprefixer'), 
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
 var path = {
     build: { 
-        html: './',
         js: 'build/scripts/',
         style: 'build/style/',
         media: 'build/media/',
@@ -36,7 +34,7 @@ var path = {
 
 var config = {
     server: {
-        baseDir: "../rusit/"
+        baseDir: "../rusit"
     },
     host: 'localhost',
     port: 1337,
@@ -45,7 +43,6 @@ var config = {
 // TASKS
 gulp.task('html:build', function() {
     gulp.src(path.src.html)
-        .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });
  

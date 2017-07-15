@@ -175,8 +175,8 @@ body{
 		top: 89px;
 		bottom: 0px;
 	};
-	background: url(../media/mtbg.png) repeat-x bottom center;
-	height: 1006px;
+	background: url(../media/mtbg.png) repeat-x center 767px;
+	min-height: 1006px;
 }
 
 .mt{
@@ -206,6 +206,16 @@ body{
 		height: 26px;
 		position: absolute;
 		left: 250px;
+	}
+}
+
+.mb{
+	position: relative;
+	img{
+		position: absolute;
+		left: 16%;
+		top: 30px;
+		z-index: 50;
 	}
 }
 
@@ -243,6 +253,7 @@ body{
 		line-height: 70px;
 		font-size: 20px;
 		margin: 0 auto;
+		padding-left: 21px;
 		&:before{
 			content: "";
 			position: absolute;
@@ -255,11 +266,12 @@ body{
 }
 
 .we-have{
-	height: 1010px;
+	min-height: 1010px;
 	padding:{
 		top: 113px;
 	}
 	background: #f9f9f9;
+	position: relative;
 }
 
 .wh-t{
@@ -283,16 +295,24 @@ body{
 .wh-boxs{
 	width: 1096px;
 	margin: 90px auto 0px;
+	.border{
+		img{
+			position: absolute;
+			bottom: -178px;
+		}
+	}
 	.wh-box{
 		display: block;
 		text-align: center;
 		background:  #ffffff;
 		box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.11);
-		width: 255px;
 		height: 310px;
 		display: inline-block;
+		&:nth-of-type(4){
+			margin-right: 0px;
+		}
 		margin:{
-			right: 30px;
+			right: 21px;
 		}
 		padding:{
 			top: 42px;
@@ -321,7 +341,6 @@ body{
 			font-family:"Roboto";
 			color:  #222222;
 			font:{
-				size: 16px;
 				weight: 300;
 			}
 			margin-top: 13px;
@@ -347,42 +366,42 @@ body{
 	background-repeat: repeat-y;
 	background-size: 100%;
 	background-position: center bottom;
-	.ruble1{
-		background:{
-			image: url(../media/ruble1.png);
-			repeat: no-repeat;
-			size: 90px;
-		}
+	#ruble1{
+		display: block;
 		position: absolute;
-		top: 520px;
-		right: 530px;
 		width: 90px;
 		height: 90px;
 	}
-	.ruble2{
-		background:{
-			image: url(../media/ruble2.png);
-			repeat: no-repeat;
-			size: 413px;
-		}
+	#ruble2{
 		position: absolute;
-		bottom: 248px;
-		left: 210px;
-		width: 344px;
-		height: 188px;
+		width: 309px;
+		height: 164px;
 	}
-	.ruble3{
-		background:{
-			image: url(../media/ruble3.png);
-			repeat: no-repeat;
-			size: 244px;
-		}
+	#ruble3{
 		position: absolute;
-		bottom: 156px;
-		right: 164px;
-		width: 411px;
-		height: 188px;
+		width: 243px;
+		height: 173px;
 	}
+
+	.fn{
+		&:after{
+			content: "";
+			width: 15px;
+			height: 73px;
+			position: absolute;
+			display: block;
+			margin: 0 auto;
+			border: 4px dotted #f74944;
+			border:{
+				top: 0px;
+				bottom: 0px;
+				right: 0px;
+			}
+			left: 50.1%;
+			top: 293px;
+		}
+	}
+
 	.ft{
 		margin:{
 			top: 42px;
@@ -401,22 +420,6 @@ body{
 			top: 32px;
 		}
 		position: relative;
-		&:after{
-			content: "";
-			width: 15px;
-			height: 57px;
-			position: absolute;
-			display: block;
-			margin: 0 auto;
-			border: 4px dotted #f74944;
-			border:{
-				top: 0px;
-				bottom: 0px;
-				right: 0px;
-			}
-			left: 50.1%;
-			top: 93px;
-		}
 	}
 	.card{
 		width: 680px;
@@ -425,6 +428,7 @@ body{
 		margin: 98px auto 0;
 		background: url(../media/card.png) no-repeat;
 		position: relative;
+		z-index: 50;
 		padding:{
 			top: 139px;
 			left: 182px;
@@ -594,8 +598,6 @@ body{
 		
 		.tooltip1{
 			background: #f24841;
-			top: -90px;
-			left: 94px;
 			height: 70px;
 			&:after{
 				content: "";
@@ -614,8 +616,6 @@ body{
 		.tooltip2{
 			background: #ff8d29;
 			height: 70px;
-			top: -13px;
-			left: 187px;
 			padding-left: 25px;
 			&:after{
 				content: "";
@@ -634,8 +634,6 @@ body{
 
 		.tooltip3{
 			background: #69464f;
-			top: -88px;
-			left: 417px;
 			padding-left: 25px;
 			padding:{
 				top:10px;
@@ -658,8 +656,6 @@ body{
 
 		.tooltip4{
 			background: #945273;
-			top: -48px;
-			left: 642px;
 			padding-left: 25px;
 			padding:{
 				top:10px;
@@ -682,8 +678,6 @@ body{
 
 		.tooltip5{
 			background: #1b90cd;
-			top: -88px;
-			left: 841px;
 			padding-left: 25px;
 			padding:{
 				top:10px;
@@ -706,8 +700,6 @@ body{
 
 		.tooltip6{
 			background: #699443;
-			top: -51px;
-			left: 1027px;
 			padding-left: 25px;
 			padding:{
 				top:10px;
@@ -748,9 +740,6 @@ body{
 			text:{
 				align: center;
 				transform: capitalize;
-			}
-			margin:{
-				left: 98.3px;
 			}
 		}
 	}
@@ -1030,6 +1019,5 @@ body{
 		}
 	}
 }
-
 @import "media.scss";
 
