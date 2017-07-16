@@ -19,6 +19,13 @@ body{
 
 /*custom*/
 
+.fade{
+	transition: .2s;
+	visibility: hidden;
+	opacity: 0;
+	transition: 1s ease-out;
+}
+
 .title{
 	color: #312829;
 	font:{
@@ -157,6 +164,8 @@ body{
 		border-radius: 19px;
 		line-height: 40px;
 		position: relative;
+		transition: .2s;
+		z-index: 50;
 		&:after{
 			content: "";
 			position: relative;
@@ -165,7 +174,14 @@ body{
 			background: #f24841;
 			display: block;
 			margin: 0 auto;
-			border-radius: 5px;
+			border-radius: 5px ease-out;
+		}
+		&:hover{
+			width: 155px;
+			height: 45px;
+			line-height: 45px;
+			border-radius: 24px;
+			box-shadow: 0 0 0 5px rgba(0,0,0,.3)
 		}
 	}
 }
@@ -200,15 +216,6 @@ body{
 	}
 }
 
-.mb-bt{
-	.bt-line1{
-		width: 4px;
-		height: 26px;
-		position: absolute;
-		left: 250px;
-	}
-}
-
 .mb{
 	position: relative;
 	img{
@@ -223,16 +230,22 @@ body{
 	text-align: center;
 	width: 730px;
 	height: 380px;
-	background:  #fcfcfc;
 	border-radius: 2px;
 	box-shadow: 0px 14px 29px 0px rgba(0, 0, 0, 0.22);
 	margin: 140px auto 0;
 	z-index: 0;
 	position: relative;
 	z-index: 50;
+	.mv-wrapper{
+		background:  #fcfcfc;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 50;
+	}
 	iframe{
-		width: 730px;
-		height: 380px;
+		width: 100%;
+		height: 100%;
 		left: 0px;
 		z-index: 10;
 		border-radius: 2px;

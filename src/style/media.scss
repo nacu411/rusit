@@ -51,7 +51,7 @@
 
 	.tooltip3{
 		top: -88px;
-		left: 417px;
+		left: 472px;
 	}
 
 	.tooltip4{
@@ -172,7 +172,7 @@
 	.wh-box{
 		width: 225px;
 		span{
-			font-size: 15px;
+			font-size: 14px;
 		}
 	}
 
@@ -531,9 +531,10 @@
 	.wh-boxs{
 		margin: 0 auto;
 		.wh-box{
+			width: 100%;
 			&:nth-of-type(3){
 				&:after{
-					bottom: 366px;
+					bottom: 336px;
 				}
 			}
 		}
@@ -590,11 +591,24 @@
 			}
 		}
 	}
+
+	.wh-boxs{
+		width: 100%;
+		margin: 0 auto;
+		.wh-box{
+			&:nth-of-type(3){
+				&:after{
+					    bottom: 326px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 320px){
 	.wh-boxs{
 		.wh-box{
+			width: 100%;
 			a{
 				font-size: 13px;
 			}
